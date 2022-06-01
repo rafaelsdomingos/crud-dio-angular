@@ -1,0 +1,32 @@
+<div class="form-group mt-4">
+    <label for="number">Number</label>
+    <input [(ngModel)]="number" type="text" class="form-control" id="number">
+</div>
+
+<div class="mt-4">
+    <p>Sem Formatação: </p>
+    <p>{{ number }}</p>
+
+    <p>Com Formatação: </p>
+    <p>{{ number | number: '2.0-1'}}</p>
+
+    <p>Trabalhando com moeda: </p>
+    <p>{{ number | currency: 'BRL' }}</p>
+
+    <p>{{ text | uppercase }}</p>
+
+</div>
+
+<hr>
+
+
+<div class="mt-4">
+    
+    <p>Data Atual sem formatação:</p>
+    <p>{{ date }}</p>
+
+
+    <p>Data Atual com pipe:  </p>
+    <p>{{ date | date}}</p>
+
+</div>
