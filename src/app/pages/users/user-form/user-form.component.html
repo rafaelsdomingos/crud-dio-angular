@@ -1,0 +1,50 @@
+<div class="card w-100 my-5">
+    <div class="card-body">
+        <h1 class="card-title text-center">Formulário de Usuários</h1>
+
+        <form [formGroup]="userForm">
+            <div class="row my-4">
+                <div class="form-group col-6">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome" formControlName="nome">
+                </div>
+                <div class="form-group col-6">
+                    <label for="sobrenome" class="form-label">Sobrenome:</label>
+                    <input type="text" class="form-control" id="sobrenome" placeholder="Digite o seu sobrenome" formControlName="sobrenome">
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="form-group col-2">
+                    <label for="idade" class="form-label">Idade:</label>
+                    <input type="text" class="form-control" id="idade" placeholder="Digite a sua idade" formControlName="idade">
+                </div>
+
+                <div class="form-group col-10">
+                    <label for="profissao" class="form-label">Profissão:</label>
+                    <input type="text" class="form-control" id="profissao" placeholder="Digite a sua profissão" formControlName="profissao">
+                </div>
+            </div>
+
+
+            <div class="row my-4">
+                <div class="form-group col-12 mt-4">
+                    <button type="button" class="btn btn-outline-danger float-start" routerLink="/form">Cancelar</button>
+                    <button type="button" class="btn btn-outline-success float-end" (click)="actionButton()" routerLink="/form">Salvar</button>
+                </div>
+            </div>
+
+
+
+
+        </form>
+
+
+
+
+
+        
+
+        
+    </div>
+</div>
